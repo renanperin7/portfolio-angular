@@ -1,0 +1,45 @@
+.container-div {
+
+    background-color: rgb(160, 158, 158);
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .title-container {
+        background-color: green;
+        width: 40%;
+        height: 60%;
+        padding: 14px;
+
+        .title h1 {
+            font-weight: 700;
+            font-size: 46px;
+        }
+
+        .paragraph {
+            margin-top: 36px;
+            p {
+                color: rgb(172, 172, 172);
+            }    
+            svg {
+                height: 16px;
+                margin-bottom: 4px;
+            }
+        }
+            
+        .icons {
+            svg {
+                margin-top: 36px;
+            }
+        }
+    }
+    
+    .image-container {
+        background-color: red;
+        width: 40%;
+        height: 60%;
+    }
+}
