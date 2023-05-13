@@ -1,29 +1,31 @@
 .container-div {
 
-    background-color: rgb(160, 158, 158);
     width: 80%;
     height: 600px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
+    
     .title-container {
-        background-color: green;
         width: 40%;
         height: 60%;
-        padding: 14px;
+        padding: 24px;
 
         .title h1 {
             font-weight: 700;
             font-size: 46px;
+            line-height: 48px;
         }
 
         .paragraph {
             margin-top: 36px;
+
             p {
                 color: rgb(172, 172, 172);
+                font-weight: 500;
             }    
+            
             svg {
                 height: 16px;
                 margin-bottom: 4px;
@@ -38,8 +40,46 @@
     }
     
     .image-container {
-        background-color: red;
         width: 40%;
         height: 60%;
+        display: flex;
+        justify-content: center;
+
+        div { 
+            
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 100px;
+                border: 1px solid var(--bs-link-color);
+                box-shadow: 0px 0px 12px 4px var(--bs-link-color);
+            }
+        }
+    }
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    height: 40px;
+
+    .title-footer {
+        font-size: 18px;
+        font-weight: 700;
+        padding: 24px;
+        margin-right: 24px;
+    }
+
+    .icons-footer {
+        display: flex;
+        height: 32px;
+        
+        img {
+            height: 100%;
+            width: 100%;
+            margin-right: 32px;
+        }
     }
 }

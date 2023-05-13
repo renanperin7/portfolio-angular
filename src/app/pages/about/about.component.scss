@@ -1,0 +1,76 @@
+.container-div {
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    .content {
+        padding: 24px;
+        .title h1 {
+            font-weight: 700;
+            font-size: 46px;
+        }
+
+        .main {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 36px;
+            position: relative;
+
+            .images {
+                .first-image {
+                    position: absolute;
+                    width: 368px;
+                    height: 160px;
+                    top: 56px;
+                    left: 0px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 24px;
+                    }
+                }
+                .second-image {
+                    position: absolute;
+                    width: 368px;
+                    height: 160px;
+                    top: 350px;
+                    left: 0px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 24px;
+                    }
+                }
+            }
+            
+            .context {
+                width: 80%;
+
+                p:nth-child(odd) {
+                    color: rgb(172, 172, 172);
+                    font-weight: 500;
+                    padding-right: 50%;
+                    margin-bottom: 36px;
+                }
+                p:nth-child(even) {
+                    color: rgb(172, 172, 172);
+                    font-weight: 500;
+                    padding-left: 50%;
+                    margin-bottom: 36px;
+                }
+            }
+        }
+    }
+       
+   .right {
+        background-color: blue;
+        width: 50%;
+        padding: 24px;
+        .main {
+
+            
+        }
+   }
+}
