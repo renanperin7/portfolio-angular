@@ -7,14 +7,17 @@
 
     .content {
         padding: 24px;
+
         .title h1 {
             font-weight: 700;
             font-size: 46px;
+            padding-left: 96px;
         }
 
         .main {
             display: flex;
             align-items: flex-start;
+            justify-content: center;
             margin-top: 36px;
             position: relative;
 
@@ -24,7 +27,7 @@
                     width: 368px;
                     height: 160px;
                     top: 56px;
-                    left: 0px;
+                    left: 96px;
                     img {
                         width: 100%;
                         height: 100%;
@@ -36,7 +39,7 @@
                     width: 368px;
                     height: 160px;
                     top: 350px;
-                    left: 0px;
+                    left: 96px;
                     img {
                         width: 100%;
                         height: 100%;
