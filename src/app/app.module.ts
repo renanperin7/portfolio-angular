@@ -11,6 +11,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ImagemDialogComponent } from './components/imagem-dialog/imagem-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -20,14 +22,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactComponent,
     ProjectsComponent,
     AboutComponent,
-    HeaderComponent
+    HeaderComponent,
+    ImagemDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
