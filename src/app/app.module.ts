@@ -13,6 +13,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImagemDialogComponent } from './components/imagem-dialog/imagem-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatTreeModule } from '@angular/material/tree';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     HttpClientModule,
     MatIconModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

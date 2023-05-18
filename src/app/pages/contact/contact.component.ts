@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Clipboard} from '@angular/cdk/clipboard';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  emailCopied: boolean = false
+  numberCopied: boolean = false
 
-  ngOnInit() {
+
+  constructor(private clipboard: Clipboard) {}
+  
+  ngOnInit(): void {
+    
+  }
+  
+  copyEmail() {
+    this.clipboard.copy('renanperin27@hotmail.com');
+    this.emailCopied = !this.emailCopied
   }
 
+  copyNumber() {
+    this.clipboard.copy('27996232907');
+    this.numberCopied = !this.numberCopied
+  }
 }
