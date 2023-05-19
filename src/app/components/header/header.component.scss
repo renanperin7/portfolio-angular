@@ -19,3 +19,33 @@
         }
     }
 }
+
+@media (max-width: 552px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 220px;
+        border-bottom: 2px solid rgb(192, 192, 192);
+        margin-bottom: 70px;
+    
+        .title {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 64px;
+        }
+    
+        .nav {
+            display: flex;
+            justify-content: space-evenly;
+            width: 90%;
+
+            .nav-link {
+                font-weight: 500;
+                font-size: 64px;
+                padding: 0px;
+            }
+        }
+    }
+ }

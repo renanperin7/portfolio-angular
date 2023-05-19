@@ -71,9 +71,46 @@
         background-color: blue;
         width: 50%;
         padding: 24px;
-        .main {
-
-            
-        }
    }
+}
+
+@media (max-width: 450px) { 
+    .container-main {
+        width: 90%;
+        height: 100%;
+    
+        .content {
+            .title{ 
+                h1 {
+                    font-size: 86px;
+                    padding: 80px 56px;
+                }
+            }
+    
+            .main {
+                line-height: normal;
+                .images {
+                    .first-image {
+                        visibility: hidden;
+                    }
+                    .second-image {
+                        visibility: hidden;
+                    }
+                }
+                
+                .context {
+                    width: 90%;
+    
+                    p:nth-child(odd) {
+                        font-size: 56px;
+                        padding-right: 0;
+                    }
+                    p:nth-child(even) {
+                        font-size: 56px;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
 }
