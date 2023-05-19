@@ -84,7 +84,7 @@
     }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .container-main {
         width: 80%;
         .title-container {
@@ -115,7 +115,7 @@
 }
 
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     .container-main {
         width: 100%;
         margin: auto;
@@ -147,7 +147,7 @@
 }
 
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
     .container-main {
         height: 100%;
         flex-direction: column;
