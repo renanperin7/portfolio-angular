@@ -11,23 +11,24 @@
         .title h1 {
             font-weight: 700;
             font-size: 46px;
-            padding-left: 96px;
+            padding-left: 116px;
         }
 
         .main {
             display: flex;
             align-items: flex-start;
             justify-content: center;
+            width: 1200px;
             margin-top: 36px;
             position: relative;
 
             .images {
                 .first-image {
                     position: absolute;
-                    width: 368px;
+                    width: 439px;
                     height: 160px;
-                    top: 56px;
-                    left: 96px;
+                    top: 43px;
+                    left: 118px;
                     img {
                         width: 100%;
                         height: 100%;
@@ -36,10 +37,10 @@
                 }
                 .second-image {
                     position: absolute;
-                    width: 368px;
-                    height: 160px;
-                    top: 350px;
-                    left: 96px;
+                    width: 439px;
+                    height: 165px;
+                    top: 289px;
+                    left: 118px;
                     img {
                         width: 100%;
                         height: 100%;
