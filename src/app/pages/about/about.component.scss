@@ -1,8 +1,7 @@
 .container-main {
-    width: 80%;
-    height: 600px;
-    margin: auto;
+    width: 1000px;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
 
     .content {
@@ -11,24 +10,21 @@
         .title h1 {
             font-weight: 700;
             font-size: 46px;
-            padding-left: 116px;
         }
 
         .main {
             display: flex;
             align-items: flex-start;
             justify-content: center;
-            width: 1200px;
             margin-top: 36px;
             position: relative;
 
             .images {
                 .first-image {
                     position: absolute;
-                    width: 439px;
-                    height: 160px;
-                    top: 43px;
-                    left: 118px;
+                    width: 455px;
+                    height: 127px;
+                    top: 53px;
                     img {
                         width: 100%;
                         height: 100%;
@@ -37,10 +33,9 @@
                 }
                 .second-image {
                     position: absolute;
-                    width: 439px;
-                    height: 165px;
-                    top: 289px;
-                    left: 118px;
+                    width: 455px;
+                    height: 169px;
+                    top: 258px;
                     img {
                         width: 100%;
                         height: 100%;
@@ -50,46 +45,94 @@
             }
             
             .context {
-                width: 80%;
-
                 p:nth-child(odd) {
                     color: rgb(172, 172, 172);
                     font-weight: 500;
                     padding-right: 50%;
-                    margin-bottom: 36px;
+                    margin-bottom: 26px;
                 }
                 p:nth-child(even) {
                     color: rgb(172, 172, 172);
                     font-weight: 500;
                     padding-left: 50%;
-                    margin-bottom: 36px;
+                    margin-bottom: 26px;
                 }
             }
         }
     }
        
-   .right {
-        background-color: blue;
-        width: 50%;
-        padding: 24px;
-   }
 }
+
+@media screen and (max-width: 1366px) {
+    .container-main {
+        width: 70vw;
+
+        .content {
+            .main {
+                .images {
+                    .first-image {
+                        position: absolute;
+                        width: 440px;
+                        height: 124px;
+                        top: 41px; 
+                    }
+                    .second-image {
+                        position: absolute;
+                        width: 440px;
+                        height: 149px;
+                        top: 246px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    .container-main {
+        width: 80vw;
+
+        .content {
+            .main {
+                .images {
+                    .first-image {
+                        position: absolute;
+                        width: 267px;
+                        height: 159px;
+                        top: 75px; 
+                    }
+                    .second-image {
+                        position: absolute;
+                        width: 267px;
+                        height: 221px;
+                        top: 388px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 450px) { 
     .container-main {
-        width: 90%;
-        height: 100%;
+        width: 100vw;
     
         .content {
+
             .title{ 
                 h1 {
-                    font-size: 86px;
-                    padding: 80px 56px;
+                    font-size: 44px;
+                    line-height: normal;
+                    padding: 0px;
                 }
             }
     
             .main {
                 line-height: normal;
+                margin-top: 0px;
+
                 .images {
                     .first-image {
                         visibility: hidden;
@@ -100,15 +143,16 @@
                 }
                 
                 .context {
-                    width: 90%;
     
                     p:nth-child(odd) {
-                        font-size: 56px;
+                        font-size: 20px;
                         padding-right: 0;
+                        margin-bottom: 21px;
                     }
                     p:nth-child(even) {
-                        font-size: 56px;
+                        font-size: 20px;
                         padding-left: 0;
+                        margin-bottom: 21px;
                     }
                 }
             }

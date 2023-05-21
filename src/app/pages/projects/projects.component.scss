@@ -1,23 +1,17 @@
 .container-main {
-    width: 80%;
-    margin: auto;
+    width: 1300px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 
     .projects:nth-child(odd) {
-        width: 100%;
-        height: 600px;
         display: flex;
         background-color: rgb(245, 245, 245);
         border-radius: 24px;
         box-shadow: 0px 0px 12px 2px rgb(172, 172, 172);
         margin-top: 40px;
-        margin-bottom: 40px;
 
         .left-panel {
-            width: 60%;
-            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -32,12 +26,10 @@
         }
 
         .grid-template {
-            height: 100%;
-            width: 70%;
             padding: 12px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 40px;
+            grid-gap: 10px;
             align-content: center;
 
             .grid-item {
@@ -55,8 +47,6 @@
         } 
         
         .right-panel {
-            width: 40%;
-            height: 100%;
             padding: 24px;
 
             h1 {
@@ -84,18 +74,13 @@
     }
 
     .projects:nth-child(even) {
-        width: 100%;
-        height: 600px;
         display: flex;
         background-color: rgb(245, 245, 245);
         border-radius: 24px;
         box-shadow: 0px 0px 12px 2px rgb(172, 172, 172);
         margin-top: 40px;
-        margin-bottom: 40px;
 
         .left-panel {
-            width: 40%;
-            height: 100%;
             padding: 24px;
 
             h1 {
@@ -122,8 +107,6 @@
         }
         
         .right-panel {
-            width: 60%;
-            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -138,12 +121,11 @@
         }
 
         .grid-template {
-            height: 100%;
-            width: 70%;
+            width: 2200px;
             padding: 12px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 40px;
+            grid-gap: 10px;
             align-content: center;
 
             .grid-item {
@@ -162,22 +144,40 @@
     }
 }
 
+@media screen and (max-width: 1366px) {
+    .container-main {
+        width: 90vw;
+    }
+}
+
+
+@media all and (max-width: 768px) {
+    .container-main {
+        width: 90vw;
+    }
+}
+
+
 @media screen and (max-width: 450px) {
     .container-main {
-        height: 100%;
+        width: 100vw;
     
         .projects:nth-child(odd) {
-            height: 2300px;
             flex-direction: column-reverse;
+
             .left-panel {
-                width: 100%;
+                padding: 32px;
+                img {
+                    width: 64%;
+                    margin-bottom: 12px;
+                }
             }
-    
+
             .grid-template {
                 width: 100%;
 
                  .grid-item img {
-                    height: 376px;
+                    height: 127px;
                 }
             } 
     
@@ -187,55 +187,63 @@
                 padding: 32px;
     
                 h1 {
-                    font-size: 86px;
-                    margin-bottom: 48px;
+                    font-size: 44px;
+                    line-height: normal;
+                    margin-bottom: 21px;
                 }
     
                 p {
-                    font-size: 56px;
+                    font-size: 20px;
                     line-height:normal;
-                    margin-bottom: 48px;
+                    margin-bottom: 21px;
                 }
     
                 a {
-                    font-size: 46px;
-                    border-radius: 28px;
+                    font-size: 14px;
+                    border-radius: 16px;
                 }
             } 
         }
     
         .projects:nth-child(even) {
-            height: 2300px;
             flex-direction: column;
+
             .left-panel {
                 width: 100%;
                 height: auto;
                 padding: 32px;
     
                 h1 {
-                    font-size: 86px;
-                    margin-bottom: 48px;
+                    font-size: 44px;
+                    line-height: normal;
+                    margin-bottom: 21px;
                 }
     
                 p {
-                    font-size: 56px;
+                    font-size: 20px;
                     line-height:normal;
-                    margin-bottom: 48px;
+                    margin-bottom: 21px;
                 }
     
                 a {
-                    font-size: 46px;
-                    border-radius: 28px;
+                    font-size: 14px;
+                    border-radius: 16px;
                 }
             }
             .right-panel {
                 width: 100%;
+                padding: 32px;
+
+                img {
+                    width: 64%;
+                    margin-bottom: 12px;
+                }
             }
     
             .grid-template {
                 width: 100%;
                 .grid-item img {
-                    height: 376px;
+                    height: 127px;
                 }
             }
         }
