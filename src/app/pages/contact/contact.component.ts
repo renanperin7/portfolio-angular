@@ -21,10 +21,20 @@ export class ContactComponent implements OnInit {
   copyEmail() {
     this.clipboard.copy('renanperin27@hotmail.com');
     this.emailCopied = !this.emailCopied
+    setTimeout(() => {
+      if(this.emailCopied) {
+        this.emailCopied = false
+      }
+    }, 2000)
   }
 
   copyNumber() {
     this.clipboard.copy('27996232907');
     this.numberCopied = !this.numberCopied
+    setTimeout(() => {
+      if(this.numberCopied) {
+        this.numberCopied = false
+      }
+    }, 2000)
   }
 }

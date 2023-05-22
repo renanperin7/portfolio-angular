@@ -19,43 +19,16 @@
             margin-top: 36px;
             position: relative;
 
-            .images {
-                .first-image {
-                    position: absolute;
-                    width: 455px;
-                    height: 127px;
-                    top: 53px;
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 24px;
-                    }
-                }
-                .second-image {
-                    position: absolute;
-                    width: 455px;
-                    height: 169px;
-                    top: 258px;
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 24px;
-                    }
-                }
-            }
-            
             .context {
-                p:nth-child(odd) {
-                    color: rgb(172, 172, 172);
+                h3 {
                     font-weight: 500;
-                    padding-right: 50%;
-                    margin-bottom: 26px;
+                    font-size: 24px;
+                    margin-top: 22px;
                 }
-                p:nth-child(even) {
+
+                p {
                     color: rgb(172, 172, 172);
                     font-weight: 500;
-                    padding-left: 50%;
-                    margin-bottom: 26px;
                 }
             }
         }
@@ -66,25 +39,6 @@
 @media screen and (max-width: 1366px) {
     .container-main {
         width: 70vw;
-
-        .content {
-            .main {
-                .images {
-                    .first-image {
-                        position: absolute;
-                        width: 440px;
-                        height: 124px;
-                        top: 41px; 
-                    }
-                    .second-image {
-                        position: absolute;
-                        width: 440px;
-                        height: 149px;
-                        top: 246px;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -92,25 +46,6 @@
 @media all and (max-width: 768px) {
     .container-main {
         width: 80vw;
-
-        .content {
-            .main {
-                .images {
-                    .first-image {
-                        position: absolute;
-                        width: 267px;
-                        height: 159px;
-                        top: 75px; 
-                    }
-                    .second-image {
-                        position: absolute;
-                        width: 267px;
-                        height: 221px;
-                        top: 388px;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -132,26 +67,14 @@
             .main {
                 line-height: normal;
                 margin-top: 0px;
-
-                .images {
-                    .first-image {
-                        visibility: hidden;
-                    }
-                    .second-image {
-                        visibility: hidden;
-                    }
-                }
-                
                 .context {
-    
-                    p:nth-child(odd) {
+                    h3 {
+                        font-size: 32px;
+                    }
+
+                    p {
                         font-size: 20px;
                         padding-right: 0;
-                        margin-bottom: 21px;
-                    }
-                    p:nth-child(even) {
-                        font-size: 20px;
-                        padding-left: 0;
                         margin-bottom: 21px;
                     }
                 }
