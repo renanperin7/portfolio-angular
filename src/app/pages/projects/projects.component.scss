@@ -170,7 +170,8 @@
             flex-direction: column-reverse;
 
             .left-panel {
-                padding: 32px;
+                margin: 12px 8px 24px 0px;
+
                 img {
                     width: 64%;
                     margin-bottom: 12px;
@@ -188,35 +189,37 @@
             .right-panel {
                 width: 100%;
                 height: auto;
-                padding: 32px;
-    
+                margin: 24px 8px 24px 0px;
+                padding: 16px;
+                
                 h1 {
                     font-size: 44px;
                     line-height: normal;
                     margin-bottom: 21px;
                 }
-    
+                
                 p {
                     font-size: 20px;
                     line-height:normal;
                     margin-bottom: 21px;
                 }
-    
+                
                 a {
                     font-size: 14px;
                     border-radius: 16px;
                 }
             } 
         }
-    
+        
         .projects:nth-child(even) {
             flex-direction: column;
-
+            
             .left-panel {
                 width: 100%;
                 height: auto;
-                padding: 32px;
-    
+                margin: 24px 0px 24px 8px;
+                padding: 16px;
+                
                 h1 {
                     font-size: 44px;
                     line-height: normal;
@@ -236,7 +239,7 @@
             }
             .right-panel {
                 width: 100%;
-                padding: 32px;
+                margin: 12px 0px 24px 8px;
 
                 img {
                     width: 64%;
