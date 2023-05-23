@@ -36,8 +36,8 @@ export class ProjectsComponent implements OnInit {
       data: { imagemUrl },
       width: 'auto',
       height: 'auto',
-      maxWidth: '90vw',
-      maxHeight: '90vh'
+      maxWidth: '80vw',
+      maxHeight: '80vh'
     });
   }
 
