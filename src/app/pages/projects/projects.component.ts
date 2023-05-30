@@ -19,8 +19,9 @@ export class ProjectsComponent implements OnInit {
   projetoFormTinnova: string = 'assets/FormTinnova.png'
   projetoFormTinnova2: string = 'assets/FormTinnova2.png'
   projetoFormTinnova3: string = 'assets/FormTinnova3.png'
-  projetoSecretword: string = 'assets/Secretword.png'
-  projetoSecretword2: string = 'assets/Secretword2.png'
+  projetoSwapi: string = 'assets/swapi.png'
+  projetoSwapi2: string = 'assets/swapi2.png'
+  projetoSwapi3: string = 'assets/swapi3.png'
 
   constructor(public dialog: MatDialog) { }
 
