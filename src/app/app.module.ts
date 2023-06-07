@@ -11,7 +11,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ImagemDialogComponent } from './components/imagem-dialog/imagem-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTreeModule } from '@angular/material/tree';
 
@@ -24,7 +23,6 @@ import { MatTreeModule } from '@angular/material/tree';
     ProjectsComponent,
     AboutComponent,
     HeaderComponent,
-    ImagemDialogComponent
   ],
   imports: [
     BrowserModule,

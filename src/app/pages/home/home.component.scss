@@ -46,10 +46,19 @@
     
             div { 
                 img {
+                    transition: all 1s ease; 
                     height: 300px;
                     border-radius: 100px;
                     border: 1px solid var(--bs-link-color);
                     box-shadow: 0px 0px 12px 4px var(--bs-link-color);
+                }
+            }
+        }
+
+        .image-container:hover {
+            div { 
+                img {
+                    box-shadow: 0px 0px 15px 10px var(--bs-link-color);
                 }
             }
         }

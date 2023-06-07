@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ImagemDialogComponent } from 'src/app/components/imagem-dialog/imagem-dialog.component';
 
 @Component({
   selector: 'app-projects',
@@ -30,16 +29,6 @@ export class ProjectsComponent implements OnInit {
 
   expandImage() {
 
-  }
-
-  abrirImagemDialog(imagemUrl: string) {
-    this.dialog.open(ImagemDialogComponent, {
-      data: { imagemUrl },
-      width: 'auto',
-      height: 'auto',
-      maxWidth: '80vw',
-      maxHeight: '80vh'
-    });
   }
 
 }
